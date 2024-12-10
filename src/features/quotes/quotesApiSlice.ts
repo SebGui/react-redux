@@ -16,6 +16,18 @@ interface QuotesApiResponse {
 
 // Define a service using a base URL and expected endpoints
 export const quotesApiSlice = createApi({
+  // More complete example :
+  /*
+  baseQuery: fetchBaseQuery({ 
+        baseUrl: 'https://api.endpoint/',
+        method: "POST",
+        body,
+        prepareHeaders: (headers, { getState }) => {
+            headers.set('Access-Control-Allow-Origin', '*')
+            return headers
+        }
+    }),
+  */
   baseQuery: fetchBaseQuery({ baseUrl: "https://dummyjson.com/quotes" }),
   reducerPath: "quotesApi",
   // Tag types are used for caching and invalidation.

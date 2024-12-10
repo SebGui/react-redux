@@ -22,6 +22,9 @@ export const Counter = () => {
 
   return (
     <div>
+      <h3>
+        Counter
+      </h3>
       <div className={styles.row}>
         <button
           className={styles.button}

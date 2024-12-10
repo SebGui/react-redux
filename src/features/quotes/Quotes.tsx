@@ -29,7 +29,7 @@ export const Quotes = () => {
   if (isSuccess) {
     return (
       <div className={styles.container}>
-        <h3>Select the Quantity of Quotes to Fetch:</h3>
+        <h3>Get quotes by select amount:</h3>
         <select
           className={styles.select}
           value={numberOfQuotes}
